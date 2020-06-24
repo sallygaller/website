@@ -1,0 +1,124 @@
+/*import custom font*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap');
+
+/*set all elements with border box sizing, make elements comparatively the right size */
+* {
+  box-sizing: border-box;
+}
+
+/*image is full width of screen*/
+header img {
+  width: 100%;
+}
+
+/*page title*/
+header h1 {
+  font-family: 'DM Serif Display', cursive;
+  font-size: 72px;
+  padding-top: 100px; /*white space at top of page*/
+  padding-left: 20px;
+  line-height: 50px;
+  margin: 0px;
+}
+
+/*text beneath title*/
+header h2 {
+  /*makes text uppercase for h2 header only*/
+  text-transform: uppercase;
+}
+
+/*set text for header, h1 doesn't change*/
+header {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*text for all h2 elements*/
+h2 {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+/*navigation bar*/
+nav {
+  font-size: 18px;
+  /*center text in page*/
+  text-align: center; 
+  /*create space around text within nav bar element*/
+  padding: 20px;
+}
+
+/*set text for main body*/
+main {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*paragraph*/
+p {
+  font-size: 16px;
+  padding-left: 20px;
+  line-height: 20px;
+}
+
+/*horizontal rule*/
+hr {
+  height: 4px;
+  /*set width of rule*/
+  width: 150px;
+  background-color: #457b9d;
+  /*aligned in center of page*/
+  text-align: center;
+}
+
+/*list items*/
+li {
+  /*create space between list items*/
+  padding-bottom: 5px;
+  line-height: 20px;
+}
+
+main img {
+  width: 300px;
+  /*displays elements as block element, takes up whole width of page*/
+  display: block;
+  /*whitespace above and below picture*/
+  padding: 20px; 
+  /*browser calculates margins*/
+  margin-left: auto;
+  margin-right: auto;
+  /*rounds edges of image*/
+  border-radius: 50%
+}
+
+/*footer element*/
+footer {
+  background-color: #1d3557;
+  color: white;
+  margin: 0px;
+  font-size: 10px;
+  /*creates space in the top and bottom of border*/
+  padding: 20px; 
+  font-family: 'Roboto', sans-serif;
+}
+
+/*style links*/ 
+  /*unvisited*/ 
+a:link { 
+  color: #457b9d;
+  text-decoration: none;
+} 
+  /*visited*/ 
+  a:visited { 
+  color: #8d99ae;
+  text-decoration: none; 
+} 
+  /*when user hovers over link*/ 
+  a:hover { 
+  color: #e63946;
+  text-decoration: none; 
+} 
+  /*when link is clicked*/ 
+  a:active {
+  color: #2a9d8f; 
+  /*removes underline from link*/ 
+  text-decoration: none; 
+}

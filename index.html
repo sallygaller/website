@@ -1,0 +1,77 @@
+<!--declares document as HTML web page-->
+<!DOCTYPE html>
+<!--wraps around all HTML code-->
+<html>
+  <head>
+    <!--informs browsers how to process code and characters-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!--displays at top of web browser-->
+    <title>Sally Galler</title>
+     <!--Normalize stylesheet, ensures HTML elements are consistent across browsers-->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    rel="stylesheet"
+    type="text/css"/>
+    <!--links to CSS stylesheet, overwrites Normalize stylesheet-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+<!--body contains all HTML code for displaying web page-->
+<body>
+<!--header section, contains title, banner image, and navigation bar-->
+<header>
+  <h1>Sally Galler</h1>
+  <h2>Software Developer</h2>
+  <img src="images/clouds.png" alt="Clouds and blue sky"/>
+<nav> 
+<!--three articles on web page, navigation bar can link to them using individual IDs-->
+  <a href="index.html">Home</a> | 
+  <a href="#about-me"> About </a> | 
+  <a href="#contact-me">Contact</a>
+</nav>
+</header>
+<!--main section, contains main content-->
+<main>
+    <!--first article/section: intro-->
+    <article>
+    <h2>Hello!</h2>
+      <p>I'm a software developer from the UK living in Portland, OR.</p>
+      <p>I love learning, working with others, and creative problem solving - and software development lets me do all those things!</p>
+    </article>
+    <hr>
+    <!--second article/section: about me-->
+    <article id="about-me">
+      <h2>About me</h2>
+      <!--unordered list/bullet points-->
+      <ul>
+        <li>My background is in music and sound design, and my first experience programming was creating algorithmic compositions in Max/MSP. </li> 
+        <li>My career began in the non-profit world as a database administrator. I love helping organizations be more efficient and have a good relationship with their data!</li>
+        <li>I enjoy composing with recorded birdsong and <a href="https://soundcloud.com/sallysounds/synthesised-nightingale_4" target="_blank">synthesizing my own birdsong.</a></li>
+    </article>
+    <hr>
+    <!-- third article/section: contact me-->
+    <article id="contact-me">
+    <h2> Let's talk about it! </h2>
+    <p> Are you looking for a collaborator? Me too! Please contact me through:</p>
+    <!--ordered list-->
+    <ol>
+       <!--opens email in user's default account; to field is populated-->
+      <li><a href="mailto:sallyannegaller@gmail.com">Email</a>
+      <!--opens LinkedIn profile in new tab-->
+      <li><a href="https://www.linkedin.com/in/sally-galler-portland" target="_blank">LinkedIn</a></li> 
+      <!--opens GitHub profile in new tab-->
+      <li><a href="https://github.com/sallygaller" target="_blank">GitHub</a> </li>
+    <!--image-->
+    <img src="images/sally-and-eddie.jpg" alt="Sally and Eddie"/>
+    </article>
+</main>
+<!--footer section-->
+<footer>
+  <!--copyright image-->
+  <p> &copy; Sally Galler <br>
+  <!--line break-->
+  Banner image: Aniketh Kanukurthi via Unsplash </p>
+</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
