@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <!--displays at top of web browser-->
     <title>Sally Galler</title>
-     <!--Normalize stylesheet, ensures HTML elements are consistent across browsers-->
+     <!--Normalize stylesheet, ensures HTML elements are consistent-->
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     rel="stylesheet"
@@ -17,56 +17,64 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
 <!--body contains all HTML code for displaying web page-->
-<body>
+<body style="background-color: #f0efeb" >
 <!--header section, contains title, banner image, and navigation bar-->
 <header>
-  <h1>Sally Galler</h1>
-  <h2>Software Developer</h2>
-  <img src="images/clouds.png" alt="Clouds and blue sky"/>
-<nav> 
+  <nav class="sticky uppercase font-body f-size-20 padding-10  align-center"> 
 <!--three articles on web page, navigation bar can link to them using individual IDs-->
-  <a href="index.html">Home</a> | 
-  <a href="#about-me"> About </a> | 
-  <a href="#contact-me">Contact</a>
+  <a class="nav" href="index.html">Home</a> | 
+  <a class="nav" href="#about-me"> About </a> | 
+  <a class="nav" href="#contact-me">Contact</a>
 </nav>
+  <h1 class = "m-left-25 m-bottom-0 p-left-25 p-top-100 f-size-86 font-header">Sally Galler</h1>
+  <h2 class="uppercase font-body f-size-22 m-left-25 p-left-25">Software Developer</h2>
 </header>
-<!--main section, contains main content-->
 <main>
+  <!--main section, contains main content-->
+  <img class="full-width p-bottom-25" src="images/clouds.png" alt="Clouds and blue sky"/>
     <!--first article/section: intro-->
-    <article>
-    <h2>Hello!</h2>
+    <article class="font-body m-left-25 p-left-25">
+    <h3 class="f-size-20 ">Hello!</h2>
+    <div class ="f-size-16">
       <p>I'm a software developer from the UK living in Portland, OR.</p>
       <p>I love learning, working with others, and creative problem solving - and software development lets me do all those things!</p>
+    </div>
     </article>
     <hr>
     <!--second article/section: about me-->
-    <article id="about-me">
-      <h2>About me</h2>
+    <article id="about-me" class="font-body m-left-25 p-left-25">
+      <h3 class="f-size-20">About me</h2>
+      <!--div to ensure consistent formatting in p text-->
+      <div class ="f-size-16">
       <!--unordered list/bullet points-->
       <ul>
         <li>My background is in music and sound design, and my first experience programming was creating algorithmic compositions in Max/MSP. </li> 
-        <li>My career began in the non-profit world as a database administrator. I love helping organizations be more efficient and have a good relationship with their data!</li>
-        <li>I enjoy composing with recorded birdsong and <a href="https://soundcloud.com/sallysounds/synthesised-nightingale_4" target="_blank">synthesizing my own birdsong.</a></li>
+        <li>My career began in the non-profit world as a database administrator. I love helping organizations make data-driven decisions and become more efficient!</li>
+        <li>I enjoy composing with birdsong (my favorite belongs to the <a style = "font-weight:bold" class="main" href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/blackbird/#:~:text=Key%20information,song%20is%20also%20a%20favourite" target="_blank">common blackbird</a>) and synthesizing my own birdsong.</li>
+      </div>
     </article>
     <hr>
     <!-- third article/section: contact me-->
-    <article id="contact-me">
-    <h2> Let's talk about it! </h2>
+    <article id="contact-me" class="font-body m-left-25 p-left-25">
+    <h3 class="f-size-20"> Let's talk about it! </h2>
+    <!--div to ensure consistent formatting in p text-->
+    <div class ="f-size-16"> 
     <p> Are you looking for a collaborator? Me too! Please contact me through:</p>
     <!--ordered list-->
     <ol>
        <!--opens email in user's default account; to field is populated-->
-      <li><a href="mailto:sallyannegaller@gmail.com">Email</a>
+      <li><a style = "font-weight:bold" class="main" href="mailto:sallyannegaller@gmail.com">Email</a>
       <!--opens LinkedIn profile in new tab-->
-      <li><a href="https://www.linkedin.com/in/sally-galler-portland" target="_blank">LinkedIn</a></li> 
+      <li><a style = "font-weight:bold" class="main" href="https://www.linkedin.com/in/sally-galler-portland" target="_blank">LinkedIn</a></li> 
       <!--opens GitHub profile in new tab-->
-      <li><a href="https://github.com/sallygaller" target="_blank">GitHub</a> </li>
+      <li><a style = "font-weight:bold" class="main" href="https://github.com/sallygaller" target="_blank">GitHub</a> </li>
+    </div>
     <!--image-->
-    <img src="images/sally-and-eddie.jpg" alt="Sally and Eddie"/>
+    <img class="round" src="images/sally-and-eddie.jpg" alt="Sally and Eddie"/>
     </article>
 </main>
 <!--footer section-->
-<footer>
+<footer class="font-body f-size-14">
   <!--copyright image-->
   <p> &copy; Sally Galler <br>
   <!--line break-->

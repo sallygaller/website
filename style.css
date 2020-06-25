@@ -1,87 +1,137 @@
 /*import custom font*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap');
 
-/*set all elements with border box sizing, make elements comparatively the right size */
+/*set all elements with border box sizing, make elements comparatively the right size*/
 * {
   box-sizing: border-box;
 }
 
-/*image is full width of screen*/
-header img {
+/*navigation bar*/
+nav {
+  background-color: #e36414;
+  color: #f0efeb;
+}
+
+/*h1 element*/
+h1 {
+  font-family: 'DM Serif Display', cursive;
+  line-height: 80%
+}
+
+/*element is fixed at top of page*/
+.sticky {
+  position: fixed;
+  top: 0;
+  /*element is full width of page*/
   width: 100%;
 }
 
-/*page title*/
-header h1 {
-  font-family: 'DM Serif Display', cursive;
-  font-size: 72px;
-  padding-top: 100px; /*white space at top of page*/
-  padding-left: 20px;
-  line-height: 50px;
-  margin: 0px;
-}
-
-/*text beneath title*/
-header h2 {
-  /*makes text uppercase for h2 header only*/
+ /*makes text uppercase*/
+.uppercase {
   text-transform: uppercase;
 }
 
-/*set text for header, h1 doesn't change*/
-header {
-  font-family: 'Roboto', sans-serif;
+/*element is full width of screen*/
+.full-width {
+  width: 100%;
 }
 
-/*text for all h2 elements*/
-h2 {
-  font-size: 20px;
-  padding-left: 20px;
+/*create 10px space around content*/
+.padding-10 {
+  padding: 10px;
 }
 
-/*navigation bar*/
-nav {
-  font-size: 18px;
-  /*center text in page*/
+/*add padding at top of element*/
+.p-top-100 {
+  padding-top: 100px;
+}
+
+/*add padding at bottom of element*/
+.p-bottom-25 {
+  padding-bottom: 25px;
+}
+
+/*white space to the left*/
+.p-left-25 {
+  padding-left: 25px;
+}
+
+/*margin space the the left*/
+.m-left-25 {
+  margin-left: 25px;
+}
+
+/*bottom margin of 0px*/
+.m-bottom-0 {
+  margin-bottom: 0px;
+} 
+
+/*center in page*/
+.align-center {
   text-align: center; 
-  /*create space around text within nav bar element*/
-  padding: 20px;
 }
 
-/*set text for main body*/
-main {
-  font-family: 'Roboto', sans-serif;
+/*font size 86/title*/
+.f-size-86 {
+  font-size: 86px;
 }
 
-/*paragraph*/
-p {
+/*font size 22/subheader*/
+.f-size-22 {
+  font-size: 22px;
+}
+
+/*font size 20/section titles*/
+.f-size-20 {
+  font-size: 20x;
+}
+
+/*font size 16/p element*/
+.f-size-16 {
   font-size: 16px;
-  padding-left: 20px;
-  line-height: 20px;
+}
+
+/*font size 14/footer element*/
+.f-size-14 {
+font-size: 14px;
+}
+
+/*set font for body*/
+.font-body {
+  font-family: 'Roboto', sans-serif;
 }
 
 /*horizontal rule*/
 hr {
-  height: 4px;
+  height: 2px;
   /*set width of rule*/
   width: 150px;
+  /*creates space above and below rule*/
+  margin-top: 35px;
+  margin-bottom: 35px;
   background-color: #457b9d;
   /*aligned in center of page*/
   text-align: center;
 }
 
-/*list items*/
-li {
-  /*create space between list items*/
-  padding-bottom: 5px;
-  line-height: 20px;
+/*all p elements have increased line height*/
+p {
+  line-height: 150%;
 }
 
-main img {
+/*list items*/
+li {
+  line-height: 150%;
+  /*create space between list items*/
+  padding-bottom: 5px;
+}
+
+.round {
   width: 300px;
-  /*displays elements as block element, takes up whole width of page*/
+  /*displays element as block element, takes up whole width of page*/
   display: block;
   /*whitespace above and below picture*/
-  padding: 20px; 
+  padding: 25px; 
   /*browser calculates margins*/
   margin-left: auto;
   margin-right: auto;
@@ -92,33 +142,44 @@ main img {
 /*footer element*/
 footer {
   background-color: #1d3557;
-  color: white;
+  color: #f0efeb;
+  /*create space above footer*/
   margin: 0px;
-  font-size: 10px;
-  /*creates space in the top and bottom of border*/
+  /*creates space in footer element between content and border*/
   padding: 20px; 
-  font-family: 'Roboto', sans-serif;
+  padding-left: 50px;
 }
 
-/*style links*/ 
-  /*unvisited*/ 
-a:link { 
-  color: #457b9d;
+/*style links in nav bar*/ 
+/*unvisited*/ 
+a.nav:link { 
+  color: #f0efeb;
   text-decoration: none;
 } 
-  /*visited*/ 
-  a:visited { 
-  color: #8d99ae;
+/*visited*/ 
+a.nav:visited { 
+  color: #f0efeb;
+  text-decoration: none;
+} 
+
+/*style links*/ 
+/*unvisited*/ 
+a.main:link { 
+  color: #3d5a80;
+  text-decoration: none;
+} 
+/*visited*/ 
+a.main:visited { 
+  color: #3d5a80;
   text-decoration: none; 
 } 
-  /*when user hovers over link*/ 
-  a:hover { 
-  color: #e63946;
+/*when user hovers over link*/ 
+a.main:hover { 
+  color: #e36414;
   text-decoration: none; 
 } 
-  /*when link is clicked*/ 
-  a:active {
+/*when link is clicked*/ 
+a.main:active {
   color: #2a9d8f; 
-  /*removes underline from link*/ 
   text-decoration: none; 
 }
