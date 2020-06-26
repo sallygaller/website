@@ -8,8 +8,9 @@
 
 /*navigation bar*/
 nav {
-  background-color: #e36414;
+  background: #e36414;
   color: #f0efeb;
+  height: 35px;
 }
 
 /*h1 element*/

@@ -1,74 +1,77 @@
 <!--declares document as HTML web page-->
 <!DOCTYPE html>
 <!--wraps around all HTML code-->
-<html>
-  <head>
-    <!--informs browsers how to process code and characters-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <!--displays at top of web browser-->
-    <title>Sally Galler</title>
-     <!--Normalize stylesheet, ensures HTML elements are consistent-->
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    rel="stylesheet"
-    type="text/css"/>
-    <!--links to CSS stylesheet, overwrites Normalize stylesheet-->
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
+<html lang="en">
+
+<head>
+	<!--informs browsers how to process code and characters-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<!--displays at top of web browser-->
+	<title>Sally Galler</title>
+	<!--Normalize stylesheet, ensures HTML elements are consistent-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+	<!--links to CSS stylesheet, overwrites Normalize stylesheet-->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 <!--body contains all HTML code for displaying web page-->
-<body style="background-color: #f0efeb" >
-<!--header section, contains title, banner image, and navigation bar-->
-<header>
-  <nav class="sticky uppercase font-body f-size-20 padding-10  align-center"> 
-<!--three articles on web page, navigation bar can link to them using individual IDs-->
-  <a class="nav" href="index.html">Home</a> | 
-  <a class="nav" href="#about-me"> About </a> | 
-  <a class="nav" href="#contact-me">Contact</a>
-</nav>
-  <h1 class = "m-left-25 m-bottom-0 p-left-25 p-top-100 f-size-86 font-header">Sally Galler</h1>
-  <h2 class="uppercase font-body f-size-22 m-left-25 p-left-25">Software Developer</h2>
-</header>
-<main>
-  <!--main section, contains main content-->
-  <img class="full-width p-bottom-25" src="images/clouds.png" alt="Clouds and blue sky"/>
+<!--set background color for body-->
+
+<body style="background-color: #f0efeb">
+	<!--header section, contains title, banner image, and navigation bar-->
+	<header>
+		<nav class="sticky uppercase font-body f-size-20 padding-10 align-center">
+			<!--three articles on web page, navigation bar can link to them using individual IDs-->
+			<a class="nav" href="index.html">Home</a> |
+			<a class="nav" href="#about-me">About</a> |
+			<a class="nav" href="#contact-me">Contact</a>
+		</nav>
+		<h1 class="m-left-25 m-bottom-0 p-left-25 p-top-100 f-size-86 font-header">Sally Galler</h1>
+		<h2 class="uppercase font-body f-size-22 m-left-25 p-left-25">Software Developer</h2>
+	</header>
+	<main>
+		<!--main section, contains main content-->
+		<img class="full-width p-bottom-25" src="images/clouds.png" alt="Clouds and blue sky"/>
     <!--first article/section: intro-->
     <article class="font-body m-left-25 p-left-25">
-    <h3 class="f-size-20 ">Hello!</h2>
+    <h3 class="f-size-20 ">Hello!</h3>
     <div class ="f-size-16">
-      <p>I'm a software developer from the UK living in Portland, OR.</p>
-      <p>I love learning, working with others, and creative problem solving - and software development lets me do all those things!</p>
+      <p>I'm a software developer from the UK currently living in Portland, OR.</p>
     </div>
     </article>
+    <!--horizontal rule-->
     <hr>
     <!--second article/section: about me-->
     <article id="about-me" class="font-body m-left-25 p-left-25">
-      <h3 class="f-size-20">About me</h2>
+      <h3 class="f-size-20">About me</h3>
       <!--div to ensure consistent formatting in p text-->
       <div class ="f-size-16">
       <!--unordered list/bullet points-->
-      <ul>
-        <li>My background is in music and sound design, and my first experience programming was creating algorithmic compositions in Max/MSP. </li> 
-        <li>My career began in the non-profit world as a database administrator. I love helping organizations make data-driven decisions and become more efficient!</li>
-        <li>I enjoy composing with birdsong (my favorite belongs to the <a style = "font-weight:bold" class="main" href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/blackbird/#:~:text=Key%20information,song%20is%20also%20a%20favourite" target="_blank">common blackbird</a>) and synthesizing my own birdsong.</li>
+        <ul>
+          <li>My background is in music and sound design, and it was through composing in visual programming languages that I discovered my love of web development. Web development encompasses all the things I love about composing music: being creative, analytical, and problem-solving. I feel really lucky that I get to do those things every day as a developer.</li> 
+          <li>I love learning from other developers and breaking down problems together. We all approach problem-solving differently, and there's so much to gain from collaboration, listening and sharing!</li> 
+          <li>I enjoy composing with and synthesizing my own birdsong. My favorite birdsong belongs to the <a style = "font-weight:bold" class="main" href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/blackbird/#:~:text=Key%20information,song%20is%20also%20a%20favourite" target="_blank">common blackbird</a>.</li>
+        </ul>
       </div>
     </article>
+    <!--horizontal rule-->
     <hr>
     <!-- third article/section: contact me-->
     <article id="contact-me" class="font-body m-left-25 p-left-25">
-    <h3 class="f-size-20"> Let's talk about it! </h2>
+     <h3 class="f-size-20">Let's talk about it!</h3>
     <!--div to ensure consistent formatting in p text-->
-    <div class ="f-size-16"> 
-    <p> Are you looking for a collaborator? Me too! Please contact me through:</p>
-    <!--ordered list-->
-    <ol>
-       <!--opens email in user's default account; to field is populated-->
-      <li><a style = "font-weight:bold" class="main" href="mailto:sallyannegaller@gmail.com">Email</a>
-      <!--opens LinkedIn profile in new tab-->
-      <li><a style = "font-weight:bold" class="main" href="https://www.linkedin.com/in/sally-galler-portland" target="_blank">LinkedIn</a></li> 
-      <!--opens GitHub profile in new tab-->
-      <li><a style = "font-weight:bold" class="main" href="https://github.com/sallygaller" target="_blank">GitHub</a> </li>
-    </div>
+      <div class ="f-size-16"> 
+        <p>I'm eager to collaborate with other developers, whether it's having fun with procedural audio or working on a piece of software that could change the world! Please contact me through:</p>
+          <!--ordered list-->
+          <ol>
+            <!--opens email in user's default account; to field is populated-->
+            <li><a style = "font-weight:bold" class="main" href="mailto:sallyannegaller@gmail.com">Email</a></li> 
+            <!--opens LinkedIn profile in new tab-->
+            <li><a style = "font-weight:bold" class="main" href="https://www.linkedin.com/in/sally-galler-portland" target="_blank">LinkedIn</a></li> 
+            <!--opens GitHub profile in new tab-->
+            <li><a style = "font-weight:bold" class="main" href="https://github.com/sallygaller" target="_blank">GitHub</a></li>
+          </ol>
+      </div>
     <!--image-->
     <img class="round" src="images/sally-and-eddie.jpg" alt="Sally and Eddie"/>
     </article>
@@ -76,9 +79,9 @@
 <!--footer section-->
 <footer class="font-body f-size-14">
   <!--copyright image-->
-  <p> &copy; Sally Galler <br>
+  <p>&copy; Sally Galler<br>
   <!--line break-->
-  Banner image: Aniketh Kanukurthi via Unsplash </p>
+  Banner image: Aniketh Kanukurthi via Unsplash</p>
 </footer>
     <script src="script.js"></script>
   </body>
